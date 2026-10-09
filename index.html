@@ -100,47 +100,47 @@
                 <div class="slider">
                     <div class="slider-content">
                         <ul class="slider-content__wrapper">
-                            <li class="slider__item">
+                            <li class="slider__item" data-pet="katrine">
                                 <img class="slider__item-img" src="images/slider-img-1.jpg" alt="">
                                 <p class="slider__item-title">Katrine</p>
                                 <button class="slider__item-btn" type="button">Learn more</button>
                             </li>
-                            <li class="slider__item">
-                                <img class="slider__item-img" src="images/slider-img-2.jpg" alt="" class="slider__item-img">
+                            <li class="slider__item" data-pet="jennifer">
+                                <img class="slider__item-img" src="images/slider-img-2.jpg" alt="">
                                 <p class="slider__item-title">Jennifer</p>
                                 <button class="slider__item-btn" type="button">Learn more</button>
                             </li>
-                            <li class="slider__item">
-                                <img class="slider__item-img" src="images/slider-img-3.jpg" alt="" class="slider__item-img">
+                            <li class="slider__item" data-pet="woody">
+                                <img class="slider__item-img" src="images/slider-img-3.jpg" alt="">
                                 <p class="slider__item-title">Woody</p>
                                 <button class="slider__item-btn" type="button">Learn more</button>
                             </li>
-                            <li class="slider__item">
-                                <img class="slider__item-img" src="images/slider-img-4.jpg" alt="" class="slider__item-img">
+                            <li class="slider__item" data-pet="sophia">
+                                <img class="slider__item-img" src="images/slider-img-4.jpg" alt="">
                                 <p class="slider__item-title">Sophia</p>
                                 <button class="slider__item-btn" type="button">Learn more</button>
                             </li>
-                            <li class="slider__item">
-                                <img class="slider__item-img" src="images/slider-img-5.jpg" alt="" class="slider__item-img">
+                            <li class="slider__item" data-pet="timmy">
+                                <img class="slider__item-img" src="images/slider-img-5.jpg" alt="">
                                 <p class="slider__item-title">Timmy</p>
                                 <button class="slider__item-btn" type="button">Learn more</button>
                             </li>
-                            <li class="slider__item">
-                                <img class="slider__item-img" src="images/slider-img-6.jpg" alt="" class="slider__item-img">
+                            <li class="slider__item" data-pet="charly">
+                                <img class="slider__item-img" src="images/slider-img-6.jpg" alt="">
                                 <p class="slider__item-title">Charly</p>
                                 <button class="slider__item-btn" type="button">Learn more</button>
                             </li>
-                            <li class="slider__item">
-                                <img class="slider__item-img" src="images/slider-img-7.jpg" alt="" class="slider__item-img">
+                            <li class="slider__item" data-pet="scarlett">
+                                <img class="slider__item-img" src="images/slider-img-7.jpg" alt="">
                                 <p class="slider__item-title">Scarlett</p>
                                 <button class="slider__item-btn" type="button">Learn more</button>
                             </li>
-                            <li class="slider__item">
-                                <img class="slider__item-img" src="images/slider-img-8.jpg" alt="" class="slider__item-img">
+                            <li class="slider__item" data-pet="freddie">
+                                <img class="slider__item-img" src="images/slider-img-8.jpg" alt="">
                                 <p class="slider__item-title">Freddie</p>
                                 <button class="slider__item-btn" type="button">Learn more</button>
                             </li>
-                            <li class="slider__item">
+                            <li class="slider__item" data-pet="patrick">
                                 <img class="slider__item-img" src="images/slider-img-9.jpg" alt="" class="slider__item-img">
                                 <p class="slider__item-title">Patrick</p>
                                 <button class="slider__item-btn" type="button">Learn more</button>
@@ -330,6 +330,26 @@
     </footer>
 
     <div class="overlay"></div>
+
+    <dialog class="modal" id="pet-modal" aria-labelledby="modal-title">
+        <button class="modal__close" type="button" aria-label="Close">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.42618 6.00003L11.7046 1.72158C12.0985 1.32775 12.0985 0.689213 11.7046 0.295433C11.3108 -0.0984027 10.6723 -0.0984027 10.2785 0.295433L5.99998 4.57394L1.72148 0.295377C1.32765 -0.098459 0.68917 -0.098459 0.295334 0.295377C-0.0984448 0.689213 -0.0984448 1.32775 0.295334 1.72153L4.57383 5.99997L0.295334 10.2785C-0.0984448 10.6723 -0.0984448 11.3108 0.295334 11.7046C0.68917 12.0985 1.32765 12.0985 1.72148 11.7046L5.99998 7.42612L10.2785 11.7046C10.6723 12.0985 11.3108 12.0985 11.7046 11.7046C12.0985 11.3108 12.0985 10.6723 11.7046 10.2785L7.42618 6.00003Z"
+                    fill="#292929" />
+            </svg>
+        </button>
+        <div class="modal__img-wrapper">
+            <img class="modal__img" src="" alt="">
+        </div>
+        <div class="modal__content">
+            <h3 class="modal__title" id="modal-title"></h3>
+            <p class="modal__subtitle"></p>
+            <p class="modal__text"></p>
+            <ul class="modal__list"></ul>
+        </div>
+    </dialog>
+
     <script src="js/script.js"></script>
 </body>
 
